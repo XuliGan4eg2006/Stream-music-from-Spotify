@@ -10,7 +10,7 @@ Script for broadcasting the name of the music currently playing in Telegram Bio
 ### And be sure to save (as in step 4)
 ![Image alt](https://github.com/XuliGan4eg2006/Stream-music-from-Spotify/blob/main/image4.PNG)
 <br>
-4. Download repository and install dependencies (`pip install -r requirements.txt)
+4. Download repository and install dependencies (`pip install -r requirements.txt`)
 5. Open file `config.py` аnd replace with your values
 6. Run `main.py`
 # Profit! 
