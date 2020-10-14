@@ -35,7 +35,6 @@ def update_status(_current_playing):
 			
 			with TelegramClient('anon', api_id, api_hash) as client:
 				result = client(functions.account.UpdateProfileRequest(about=muzon))
-			#set_status(VKConfig.STATUS.format(track=track, album=album, artist=artist))
 			print(f"🎧 Spotify | {track} - {artist}")
 
 		return [track, album, artist]
