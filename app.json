@@ -5,10 +5,6 @@
   "logo": "https://www.pngitem.com/pimgs/m/148-1487614_spotify-logo-small-spotify-logo-transparent-hd-png.png",
   "keywords": ["Spotify", "express", "Telegram", "Bio", "Python", "Opensurse"],
 "env": {
-    "redirect_uri": {
-      "description": "Your app name",
-      "value": "https://YOURAPPNAME.herokuapp.com"
-    },
     "client_id": {
       "description": "Your app config https://developer.spotify.com/dashboard/applications/",
       "required": true
