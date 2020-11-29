@@ -32,6 +32,14 @@
     "def_status": {
       "description": "Your default bio in Telegram",
       "required": true
+    },
+      "bot_token": {
+      "description": "BotFather in Telegram",
+      "required": true
+    },
+      "telegram_id": {
+      "description": "Your id in Telegram",
+      "required": true
     }
   }
 }
