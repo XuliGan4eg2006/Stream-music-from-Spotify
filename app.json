@@ -1,7 +1,7 @@
 {
   "name": "Spotify Steramer",
   "description": "Simple streamer for Telegram Bio",
-  "repository": "https://github.com/XuliGan4eg2006/Stream-music-from-Spotify/tree/master",
+  "repository": "https://github.com/XuliGan4eg2006/Stream-music-from-Spotify/",
   "logo": "https://www.pngitem.com/pimgs/m/148-1487614_spotify-logo-small-spotify-logo-transparent-hd-png.png",
   "keywords": ["Spotify", "express", "Telegram", "Bio", "Python", "Opensurse"],
 "env": {
