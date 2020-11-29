@@ -33,7 +33,7 @@ def dowfile(message):
 				scope="user-read-currently-playing",
 				client_id=os.environ["client_id"],
 				client_secret=os.environ["client_secret"],
-				redirect_uri=os.environ["redirect_uri"],
+				redirect_uri="http://localhost:8888/callback",
 				username=os.environ["spotiusername"],
 			)
 		)
