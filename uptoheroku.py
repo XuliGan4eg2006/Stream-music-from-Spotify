@@ -21,19 +21,19 @@ def start(message):
 @bot.message_handler(content_types=['document'])
 def dowfile(message):
 	if message.chat.id == admin_id:
-	    chat_id = message.chat.id
-	    file_info = bot.get_file(message.document.file_id)
-	    downloaded_file = bot.download_file(file_info.file_path)
+		chat_id = message.chat.id
+		file_info = bot.get_file(message.document.file_id)
+		downloaded_file = bot.download_file(file_info.file_path)
 
-	    download = download_dict[message.chat.id]
-	    bot.send_message(message.chat.id, "Thx")
+		download = download_dict[message.chat.id]
+		bot.send_message(message.chat.id, "Thx")
 
 		spotify = spotipy.Spotify(
 			auth_manager=SpotifyOAuth(
 				scope="user-read-currently-playing",
 				client_id=os.environ["client_id"],
 				client_secret=os.environ["client_secret"],
-				redirect_uri="http://localhost:8888/callback",
+				redirect_uri=os.environ["redirect_uri"],
 				username=os.environ["spotiusername"],
 			)
 		)
