@@ -2,7 +2,6 @@ import time
 import os
 import typing
 import spotipy
-import config
 from spotipy.oauth2 import SpotifyOAuth
 from telethon.sync import TelegramClient
 from telethon import functions, types
