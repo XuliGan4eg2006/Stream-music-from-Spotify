@@ -24,7 +24,7 @@ current_playing = typing.List[typing.Union[str, str, str]]
 
 def update_status(_current_playing):
 	current = spotify.current_user_playing_track()
-	if not current is None:
+	if current:
 
 		track = current["item"]["name"]
 		album = current["item"]["album"]["name"]
@@ -37,12 +37,9 @@ def update_status(_current_playing):
 				result = client(functions.account.UpdateProfileRequest(about=muzon))
 			print(f"🎧 Spotify | {track} - {artist}")
 
-		return [track, album, artist]
-
 	if not _current_playing is None:
-		print("None")
-	
-	return
+		print("None is playing")
+		
 if __name__ == '__main__':
 	try:
 		while True:
